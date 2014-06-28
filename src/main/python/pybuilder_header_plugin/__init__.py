@@ -81,7 +81,9 @@ def check_source_file_headers(project, logger):
     affected_files += search_in_directory(test_directory, expected_header, logger)
 
     if affected_files > 0:
-        logger.info("%d python files contain unexpected header." % affected_files)
+        message = "Found %d source files containing unexpected header." % affected_files
 
         if break_build:
-            raise PyBuilderException('Found source file(s) with unexpected file header.')
+            raise PyBuilderException(message)
+        else:
+            logger.warn(message)
