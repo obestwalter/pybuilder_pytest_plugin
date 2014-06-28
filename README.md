@@ -7,7 +7,7 @@ How to use pybuilder_header_plugin
 ----------------------------------
 
 Add plugin dependency to your `build.py`
-```
+```python
 use_plugin('pypi:pybuilder_header_plugin')
 ```
 
