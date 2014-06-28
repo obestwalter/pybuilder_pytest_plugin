@@ -12,7 +12,7 @@ use_plugin('pypi:pybuilder_header_plugin')
 ```
 
 Configure the plugin within your `init` function:
-```
+```python
 @init
 def init(project):
     project.set_property('pybuilder_header_plugin_break_build', True)
