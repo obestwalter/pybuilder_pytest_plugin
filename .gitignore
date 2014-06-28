@@ -1,0 +1,14 @@
+# compiled python files
+*.py[co]
+
+# ide
+.idea
+
+# pybuilder
+target
+
+# Unit test / coverage reports
+.coverage
+
+# virtual environment
+venv
